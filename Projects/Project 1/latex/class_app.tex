@@ -1,0 +1,193 @@
+\hypertarget{class_app}{}\doxysection{App Class Reference}
+\label{class_app}\index{App@{App}}
+
+
+Contains the main functionalities of the program.  
+
+
+
+
+{\ttfamily \#include $<$App.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_app_acb8cbf3e285b91d0170ffe87df5989c5}\label{class_app_acb8cbf3e285b91d0170ffe87df5989c5}} 
+{\bfseries App} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_app_aeb351b146ad732efe17d35734390cae7}\label{class_app_aeb351b146ad732efe17d35734390cae7}} 
+void {\bfseries load\+Data} ()
+\begin{DoxyCompactList}\small\item\em Loads all storage files data into the program. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_app_a6855a60ad5fc66e5327e61cfd5834346}{load\+Packages}} (const string \&file\+Name)
+\item 
+\mbox{\Hypertarget{class_app_a2fefa23db02bbff3527ebb9dc8dd703c}\label{class_app_a2fefa23db02bbff3527ebb9dc8dd703c}} 
+void {\bfseries print\+Couriers} ()
+\begin{DoxyCompactList}\small\item\em Prints to the console the vector of Couriers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_app_af1fabaa1859926ce2e041b980d0d4864}\label{class_app_af1fabaa1859926ce2e041b980d0d4864}} 
+void {\bfseries print\+Packages} ()
+\begin{DoxyCompactList}\small\item\em Prints to the console the vector of Packages. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_app_a6644b793f7014d429eab174e2439e126}{print\+Shipments}} (int scenery)
+\begin{DoxyCompactList}\small\item\em Prints to the console the vector of Shipments. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_app_a57e59a99bbbf4ddf2f57005f582abeff}{write\+Shipments}} (int scenery)
+\begin{DoxyCompactList}\small\item\em Writes the Shipment vector to a file with the most adequate parameters according to the scenery. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_app_a994be738b2ccde1e6c72bfdf53e4e5fe}{sort\+Couriers}} (int sort\+\_\+algorithm)
+\begin{DoxyCompactList}\small\item\em Sorts the Couriers according to a certain algorithm. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_app_ad90462255287b8d75bfdf1c02f517e56}{sort\+Packages}} (int sort\+\_\+algorithm)
+\begin{DoxyCompactList}\small\item\em Sorts the Packages according to a certain algorithm. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_app_a005def055140b0998ecad7f9fd8d4cc8}{scenery1}} (bool knapsack)
+\begin{DoxyCompactList}\small\item\em Sorts with a Knapsack algorithm a shipment vector that contains the packages in each courier. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_app_a952f3c8977f4a06fa87b9c97cafce57b}\label{class_app_a952f3c8977f4a06fa87b9c97cafce57b}} 
+void {\bfseries best\+Fit\+Algorithm} ()
+\begin{DoxyCompactList}\small\item\em Fills the shipment vector with a Best-\/\+Fit algorithm. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_app_af6b1aacacd653e00bd4c0094296f2ac4}\label{class_app_af6b1aacacd653e00bd4c0094296f2ac4}} 
+void {\bfseries knap\+Sack\+Algorithm} ()
+\begin{DoxyCompactList}\small\item\em Fills the shipment vector with a 0-\/1 Knapsack algorithm. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_app_a7e83987d3d9da66833351571c075123a}{scenery2}} (bool knapsack)
+\begin{DoxyCompactList}\small\item\em Sorts with a Knapsack or Best-\/\+Fit algorithm a shipment vector that contains the packages in each courier. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_app_ad452ed2b9ec12c9a75d9e8c9313cb8f8}\label{class_app_ad452ed2b9ec12c9a75d9e8c9313cb8f8}} 
+void {\bfseries unload\+Shipments} ()
+\begin{DoxyCompactList}\small\item\em Clears Shipment vector. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_app_a776a890af585de4996ec0d8369335e4a}{sort\+Profits}} ()
+\begin{DoxyCompactList}\small\item\em Removes from the Shipment vector those who have negative profit. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_app_a04340f0838c1818d89b1ce66ca9e4ead}{scenery3}} ()
+\begin{DoxyCompactList}\small\item\em Sorts package vector with an ascending duration and finds the average delivery time of each package that can be delivered on the current day from 9\+:00 to 17\+:00. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains the main functionalities of the program. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_app_a6855a60ad5fc66e5327e61cfd5834346}\label{class_app_a6855a60ad5fc66e5327e61cfd5834346}} 
+\index{App@{App}!loadPackages@{loadPackages}}
+\index{loadPackages@{loadPackages}!App@{App}}
+\doxysubsubsection{\texorpdfstring{loadPackages()}{loadPackages()}}
+{\footnotesize\ttfamily void App\+::load\+Packages (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Name }\end{DoxyParamCaption})}
+
+@brief\+Loads more packages into the program \mbox{\Hypertarget{class_app_a6644b793f7014d429eab174e2439e126}\label{class_app_a6644b793f7014d429eab174e2439e126}} 
+\index{App@{App}!printShipments@{printShipments}}
+\index{printShipments@{printShipments}!App@{App}}
+\doxysubsubsection{\texorpdfstring{printShipments()}{printShipments()}}
+{\footnotesize\ttfamily void App\+::print\+Shipments (\begin{DoxyParamCaption}\item[{int}]{scenery }\end{DoxyParamCaption})}
+
+
+
+Prints to the console the vector of Shipments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scenery} & chooses the scenery to print \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_app_a005def055140b0998ecad7f9fd8d4cc8}\label{class_app_a005def055140b0998ecad7f9fd8d4cc8}} 
+\index{App@{App}!scenery1@{scenery1}}
+\index{scenery1@{scenery1}!App@{App}}
+\doxysubsubsection{\texorpdfstring{scenery1()}{scenery1()}}
+{\footnotesize\ttfamily int App\+::scenery1 (\begin{DoxyParamCaption}\item[{bool}]{knapsack }\end{DoxyParamCaption})}
+
+
+
+Sorts with a Knapsack algorithm a shipment vector that contains the packages in each courier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em knapsack} & If true, Knapsack algorithm will be used. If false, Best-\/\+Fit will be used \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Amount of Couriers used for all packages 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_a7e83987d3d9da66833351571c075123a}\label{class_app_a7e83987d3d9da66833351571c075123a}} 
+\index{App@{App}!scenery2@{scenery2}}
+\index{scenery2@{scenery2}!App@{App}}
+\doxysubsubsection{\texorpdfstring{scenery2()}{scenery2()}}
+{\footnotesize\ttfamily int App\+::scenery2 (\begin{DoxyParamCaption}\item[{bool}]{knapsack }\end{DoxyParamCaption})}
+
+
+
+Sorts with a Knapsack or Best-\/\+Fit algorithm a shipment vector that contains the packages in each courier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em knapsack} & If true, Knapsack algorithm will be used. If false, Best-\/\+Fit will be used \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Profit of the shipment given by \mbox{\hyperlink{class_app_a776a890af585de4996ec0d8369335e4a}{sort\+Profits()}} function 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_a04340f0838c1818d89b1ce66ca9e4ead}\label{class_app_a04340f0838c1818d89b1ce66ca9e4ead}} 
+\index{App@{App}!scenery3@{scenery3}}
+\index{scenery3@{scenery3}!App@{App}}
+\doxysubsubsection{\texorpdfstring{scenery3()}{scenery3()}}
+{\footnotesize\ttfamily int App\+::scenery3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sorts package vector with an ascending duration and finds the average delivery time of each package that can be delivered on the current day from 9\+:00 to 17\+:00. 
+
+\begin{DoxyReturn}{Returns}
+Average delivery time of each package 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_a994be738b2ccde1e6c72bfdf53e4e5fe}\label{class_app_a994be738b2ccde1e6c72bfdf53e4e5fe}} 
+\index{App@{App}!sortCouriers@{sortCouriers}}
+\index{sortCouriers@{sortCouriers}!App@{App}}
+\doxysubsubsection{\texorpdfstring{sortCouriers()}{sortCouriers()}}
+{\footnotesize\ttfamily void App\+::sort\+Couriers (\begin{DoxyParamCaption}\item[{int}]{sort\+\_\+algorithm }\end{DoxyParamCaption})}
+
+
+
+Sorts the Couriers according to a certain algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sort\+\_\+algorithm} & defines sorting algorithm \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_app_ad90462255287b8d75bfdf1c02f517e56}\label{class_app_ad90462255287b8d75bfdf1c02f517e56}} 
+\index{App@{App}!sortPackages@{sortPackages}}
+\index{sortPackages@{sortPackages}!App@{App}}
+\doxysubsubsection{\texorpdfstring{sortPackages()}{sortPackages()}}
+{\footnotesize\ttfamily void App\+::sort\+Packages (\begin{DoxyParamCaption}\item[{int}]{sort\+\_\+algorithm }\end{DoxyParamCaption})}
+
+
+
+Sorts the Packages according to a certain algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sort\+\_\+algorithm} & defines sorting algorithm \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_app_a776a890af585de4996ec0d8369335e4a}\label{class_app_a776a890af585de4996ec0d8369335e4a}} 
+\index{App@{App}!sortProfits@{sortProfits}}
+\index{sortProfits@{sortProfits}!App@{App}}
+\doxysubsubsection{\texorpdfstring{sortProfits()}{sortProfits()}}
+{\footnotesize\ttfamily int App\+::sort\+Profits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes from the Shipment vector those who have negative profit. 
+
+\begin{DoxyReturn}{Returns}
+Profit of shipment 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_a57e59a99bbbf4ddf2f57005f582abeff}\label{class_app_a57e59a99bbbf4ddf2f57005f582abeff}} 
+\index{App@{App}!writeShipments@{writeShipments}}
+\index{writeShipments@{writeShipments}!App@{App}}
+\doxysubsubsection{\texorpdfstring{writeShipments()}{writeShipments()}}
+{\footnotesize\ttfamily void App\+::write\+Shipments (\begin{DoxyParamCaption}\item[{int}]{scenery }\end{DoxyParamCaption})}
+
+
+
+Writes the Shipment vector to a file with the most adequate parameters according to the scenery. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scenery} & chooses the scenery to write to a file \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/App.\+h\item 
+src/App.\+cpp\end{DoxyCompactItemize}
